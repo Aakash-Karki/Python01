@@ -42,6 +42,7 @@ print("______________________________")
 # Accessing instance variable
 obj4 = Class4()
 print(obj4.id, obj4.name, obj4.address)
+print(obj4)
 print("______________________________")
 # Updating values
 obj4.id=2
@@ -49,4 +50,13 @@ obj4.name="New Name"
 obj4.address="Bhaktapur, Nepal"
 print(obj4.id, obj4.name, obj4.address)
 print(obj4)# call __str__() method
-
+print("______________________________")
+obj5 = Class5(1, "Your name", "Your address")
+print(obj5)
+print("______________________________")
+obj6 = Class6(1)
+print(obj6.getId())
+print(obj6)
+obj6.setId(2)
+print(obj6.getId())
+print(obj6)
