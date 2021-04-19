@@ -73,3 +73,40 @@ class Class6():
     #str
     def __str__(self):
         return str(self.id)
+"""
+class Class7():
+    # initializer function - constructor
+    def __init__(self, id=0):# default value to parameter
+        # instance variables
+        self.id = id
+    # Setter
+    def setId(self, id):
+        self.id=id
+    # Getter
+    def getId(self):
+        return str(self.id)
+    #str
+    def __str__(self):
+        return str(self.id)
+"""
+
+class Class7():
+    def __init__(self, id=0):
+        self.id=id
+    def setID(self, id):
+        self.id=id
+    def getID(self):
+        return self.id
+    def __str__(self):
+        return str(self.id)
+
+class Class8(Class7):# Inheritance - Class7 -> Super Class ; Class8 -> Sub Class
+    def __init__(self, id=0, fullName="NA"):
+        super().__init__(id) # Passing id to Class7 init
+        self.fullName=fullName
+    def setFullName(self, fullName):
+        self.fullName=fullName
+    def getFullName(self):
+        return self.fullName
+    def __str__(self):
+        return self.fullName
