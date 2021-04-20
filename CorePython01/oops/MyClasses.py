@@ -100,6 +100,7 @@ class Class7():
     def __str__(self):
         return str(self.id)
 
+
 class Class8(Class7):# Inheritance - Class7 -> Super Class ; Class8 -> Sub Class
     def __init__(self, id=0, fullName="NA"):
         super().__init__(id) # Passing id to Class7 init
@@ -109,4 +110,4 @@ class Class8(Class7):# Inheritance - Class7 -> Super Class ; Class8 -> Sub Class
     def getFullName(self):
         return self.fullName
     def __str__(self):
-        return self.fullName
+        return super(Class8, self).__str__()+", "+self.fullName
